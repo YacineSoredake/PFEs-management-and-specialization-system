@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$db = mysqli_connect('localhost', 'root', 'seojun2003', 'mydb') or die('Unable to connect');
+include "C:/Users/USER/OneDrive/Bureau/PFEs/connectdb.php";
 
 $id = $_SESSION['user_id'];
 $profquery = "SELECT * FROM prof WHERE id = ?";
