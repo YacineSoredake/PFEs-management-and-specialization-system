@@ -1,0 +1,211 @@
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+    padding: 0;
+    margin: 0;
+   background-image: url("/PFEs/figma/pexels-yungsaac-1557251.jpg");
+    background-size: cover;
+}
+header{
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(4, 182, 87, 0.253);
+}
+footer {
+    bottom: 0px;
+    background-color:rgba(4, 182, 87, 0.253);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+.body-container{
+    display: flex;
+}
+.menubar {
+    color: rgba(10, 117, 62, 1) ;
+    background-color:rgba(4, 182, 87, 0.253);
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    flex-direction: column;
+    text-align: start;
+    display: flex;
+    padding: 10px;
+}
+.afficher {
+    border-bottom: 1px solid black;
+    padding: 4px;
+    font-weight:500;
+    cursor: pointer;
+    display: none; 
+}
+a:hover{
+    color: #fdfdfd;
+    transition: 200ms;
+}
+a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fdfdfdb6;
+    padding: 10px 20px;
+    list-style: none; 
+    text-decoration: none;
+    font-size: 14px;
+}
+red{
+    color: red;
+    font-size: smaller;
+    text-align: center;
+}
+.link{
+    color:rgba(10, 117, 62, 1);
+    align-self: center;
+    border:0;
+    padding: 0;
+    font-size: 16px;
+}
+.disabled-link {
+    color: #999; 
+    text-decoration: none; 
+    cursor: not-allowed; 
+    pointer-events: none; 
+}
+
+.link:hover{
+    text-decoration: underline;
+    color: rgba(10, 117, 62, 1);
+    background-color: transparent;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    animation: fadeInUp 0.2s ease forwards;
+}
+.profile{
+    color: rgba(10, 117, 62, 1);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border: 1px solid rgba(10, 117, 62, 1) ;
+    border-radius: 8px;
+}
+.chap{
+    margin-right: 5px; 
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.profile:hover{
+    background-color: rgb(229, 223, 223);
+    transition:300ms;
+}
+.container{
+    flex: 1;
+    display: grid;
+    grid-template-columns:500px;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    gap: 15px;
+    padding-bottom: 10px;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+.teacher-div{
+    padding: 10px 25px;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(0 0 0.5rem  rgb(0, 0, 0));
+    display: flex;
+    gap:7px;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 5px;
+    transition: 200ms;
+    width:600px ;
+}
+.teacher-div:hover{
+    transform: scale(1.02);
+    transition: 200ms;
+}
+
+.inputo{ 
+    height: 30px;
+}
+textarea,.inputo{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    padding-left: 9px;
+    border: 1px solid rgba(0, 0, 0, 0.64);
+    border-radius: 5px;
+    line-height: 20px;
+}
+label{
+    font-size: 15px;
+    color: rgba(10, 117, 62, 1);
+    text-decoration: underline;
+}
+h4{
+    margin: 0;
+}
+.p{
+    position: absolute;
+    height: 100px;
+    left: 50px;
+    animation: fadeInUp 0.5s ease forwards;
+}
+.z{
+    top: 400px;
+    left: 200px;
+    animation: fadeInUp 0.6s ease forwards;
+}
+.zp{ 
+    margin-top: 30px;
+    position: absolute;
+    right: 80px;
+    height: 200px;
+    animation: fadeInUp 0.7s ease forwards;
+}
+.supervisor-inf{
+    background-color: #69b87551;
+    padding: 2px;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
+}

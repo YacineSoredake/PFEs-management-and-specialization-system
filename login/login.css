@@ -1,0 +1,181 @@
+p{
+    margin-left: 10px;
+}
+body{
+    font-size:16px ;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    background: linear-gradient(to right, rgb(15, 44, 30),rgba(16, 156, 84, 1));
+}
+.container{
+    gap: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(0px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(20px);
+    }
+  }
+
+form {
+  place-items: center;
+  background-color: rgba(250, 250, 245, 1);
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(187, 187, 187);
+  border-radius: 5px;
+  height: 270px ;
+  width:430px; 
+  display: grid;
+  gap: 10px;
+  padding-top:20px ;
+  padding-bottom:50px ;
+  filter: drop-shadow(0 0 0.7rem  rgb(46, 46, 46));
+}
+input{
+    padding-left: 10px;
+    border: 2px solid rgba(145, 192, 168, 1);
+    border-radius: 8px;
+    background-color: transparent;
+    height: 50px;
+    width: 380px;
+    font-size:16px ;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+input::placeholder{
+    text-decoration: underline;
+    color: rgba(145, 192, 168, 1);
+    padding-left:10px;
+}
+input:focus {  
+    transition: 100ms;
+    color: rgba(10, 117, 62, 1);
+}
+a{
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: rgba(10, 117, 62, 1);
+    font-size:14px ;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+a:hover{
+    text-decoration: underline;
+}
+.login-btn{
+    width: 395px;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    background-color: rgba(10, 117, 62, 1);
+}
+.login-btn:hover{
+    background-color: rgb(32, 170, 99);
+    transition: 300ms;
+}
+.regsiter-btn{
+    color: rgba(10, 117, 62, 1);
+    width: 176px;
+    margin-top: 10px;
+    border-color: rgba(10, 117, 62, 1);
+}
+.regsiter-btn:hover{
+    background-color: rgba(240, 240, 240, 0.852);
+    transition: 300ms;
+}
+.chap{
+    animation: forwards;
+    transition: 200ms;
+    margin-top: -30px;
+    margin-left: -30px;
+    height: 90px;
+    position: absolute;
+}
+.belowTitle{
+    animation: forwards;
+    transition: 200ms;
+    margin-top: 80px;
+    margin-left: 350px;
+    height: 90px;
+    position: absolute;
+    color: aliceblue;
+}
+.inpt-login:hover{
+    transition: 250ms;
+    border-color: rgba(10, 117, 62, 1);
+}
+.error-message {
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    width: 20%;
+    color: #ff0000;
+    font-size: 20px;
+    margin:0;
+    top: 100px;
+    right: 40%;
+    text-align: center; /* Center the text */
+    padding: 10px; /* Add padding for better visibility */
+    border-radius: 5px; /* Add rounded corners for a better look */
+}
+label{
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+@media (max-width: 950px) {
+    .container {
+            gap: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+    }
+    form{
+        place-items: center;
+        height: 230px ;
+        width:380px; 
+    }
+    input{
+        margin-left: 8px;
+        height: 40px;
+        width: 340px;
+        font-size:14px ;
+    }
+    .mychoice{
+        height: 50px;
+    }
+    .chap{
+        height: 60px;
+    }
+    .login-btn{
+        width: 340px;
+    }
+
+
+}

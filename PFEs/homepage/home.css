@@ -1,0 +1,234 @@
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    padding: 0;
+    margin: 0;
+    background-image: url("/PFEs/figma/pexels-yungsaac-1557251.jpg");
+    
+    background-size: cover;
+
+}
+header{
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(4, 182, 87, 0.253);
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgba(4, 182, 87, 0.253);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+.body-container{
+    display: flex;
+    height: 85vh;
+    gap: 20px;
+    align-self: center;
+    justify-content: space-between;
+}
+.menubar {
+    color: rgba(10, 117, 62, 1) ;
+    background-color:rgba(4, 182, 87, 0.253);
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    flex-direction: column;
+    text-align: start;
+    display: flex;
+    padding: 10px;
+}
+.afficher {
+    border-bottom: 1px solid black;
+    padding: 4px;
+    font-weight:500;
+    cursor: pointer;
+    display: none; 
+}
+a:hover{
+    color: #fdfdfd;
+    transition: 200ms;
+}
+a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fdfdfdb6;
+    padding: 10px 20px;
+    list-style: none; 
+    text-decoration: none;
+    font-size: 14px;
+}
+.icon{
+    height: 80px;
+}
+.profile{
+    color: rgba(10, 117, 62, 1);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border: 1px solid rgba(10, 117, 62, 1) ;
+    border-radius: 8px;
+}
+.chap{
+    margin-right: 5px; 
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.profile:hover{
+    background-color: rgb(229, 223, 223);
+    transition:300ms;
+}
+.container{
+    display: flex;
+    animation: fadeInUp 0.5s ease forwards;
+}
+.contain{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeInUp 0.5s ease forwards;
+}
+.dashboard{
+    filter: drop-shadow(0 0 0.7rem  rgb(46, 46, 46));
+    border-radius: 20px;
+    display: flex;
+    background-color:rgba(4, 201, 96, 0.47);
+    justify-content: space-between;
+    padding: 5px;
+}
+.aa{
+height: 170px;
+}
+.greeting{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px;
+}
+big{
+    font-size: 30px;
+}
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(0px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(20px);
+    }
+  }
+
+.themes-div,.profil-div,.encadreur-div{
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 300px;
+    filter: drop-shadow(0 0 0.5rem  rgb(46, 46, 46));
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+    display: grid;
+    place-items: center;
+    border: 4px solid #0a8545;
+    border-radius: 10px;
+    color:#0A753E;
+}
+.encadreur-div:hover{
+    transform: scale(1.05);
+    font-size: 18px;
+    transition: 200ms;
+    border: 4px solid rgb(255, 255, 255);
+}
+.encadreur-div:hover .icon{
+    height: 100px;
+    transition: 200ms;
+}
+.themes-div:hover{
+    transform: scale(1.05);
+    font-size: 18px;
+    transition: 200ms;
+    border: 4px solid rgb(255, 255, 255);
+}
+.themes-div:hover .icon{
+    height: 100px;
+    transition: 200ms;
+}
+.profil-div:hover{
+    transform: scale(1.05);
+    font-size: 18px;
+    transition: 200ms;
+    border: 4px solid rgb(255, 255, 255);
+}
+.profil-div:hover .icon{
+    height: 100px;
+    transition: 200ms;
+}
+@media (max-width: 950px) {
+    .container {
+            margin: 10px;
+            gap: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+    }
+    .profil-div:hover{
+        transform: scale(1.01);
+        font-size: 18px;
+        transition: 200ms;
+    }
+    .profil-div:hover .icon{
+        height: 90px;
+        transition: 200ms;
+    }
+    .encadreur-div:hover{
+        transform: scale(1.01);
+        font-size: 18px;
+        transition: 200ms;
+    }
+    .encadreur-div:hover .icon{
+        height: 90px;
+        transition: 200ms;
+    }
+    .themes-div:hover{
+        transform: scale(1.01);
+        font-size: 18px;
+        transition: 200ms;
+    }
+    .themes-div:hover .icon{
+        height: 90px;
+        transition: 200ms;
+    }
+    .themes-div,.profil-div,.encadreur-div{
+        height: 180px;
+        width: 300px;
+    }
+
+}

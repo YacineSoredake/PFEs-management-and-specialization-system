@@ -1,0 +1,236 @@
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+    padding: 0;
+    margin: 0;
+    background-image: url("/PFEs/figma/pexels-yungsaac-1557251.jpg");
+    background-size: cover;
+}
+header{
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(4, 182, 87, 0.253);
+}
+footer {
+    bottom: 0px;
+    background-color:rgba(4, 182, 87, 0.253);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+.body-container{
+    display: flex;
+    height: 85vh;
+}
+.menubar {
+    color: rgba(10, 117, 62, 1) ;
+    background-color:rgba(4, 182, 87, 0.253);
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    flex-direction: column;
+    text-align: start;
+    display: flex;
+    padding: 10px;
+}
+.afficher {
+    border-bottom: 1px solid black;
+    padding: 4px;
+    font-weight:500;
+    cursor: pointer;
+    display: none; 
+}
+a:hover{
+    color: #fdfdfd;
+    transition: 200ms;
+}
+a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fdfdfdb6;
+    padding: 10px 20px;
+    list-style: none; 
+    text-decoration: none;
+    font-size: 14px;
+}
+h2,h4{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    animation: fadeInUp 0.5s ease forwards;
+    margin: 0;
+}
+.binome-link{
+    margin-left: 5px;
+    color: red;
+    padding: 0;
+}
+.icon{
+    margin-top: 3px;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+}
+.profile{
+    color: rgba(10, 117, 62, 1);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border: 1px solid rgba(10, 117, 62, 1) ;
+    border-radius: 8px;
+}
+.chap{
+    margin-right: 5px; 
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.profile:hover{
+    background-color: rgb(229, 223, 223);
+    transition:300ms;
+}
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  .container{
+    flex: 1;
+    display: grid;
+    grid-template-columns:500px;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    padding-bottom: 10px;
+    animation: fadeInUp 0.5s ease forwards;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    padding: 20px 20px;
+    background-color: rgba(237, 237, 237, 1);
+    filter: drop-shadow(0 0 0.5rem  rgb(46, 46, 46));
+    border-radius: 6px;
+}
+label{
+    font-size: 14px;
+    color: #000000;
+    text-decoration: underline;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+}
+.persons{
+    flex-direction: c;
+    display: flex;
+    gap: 20px;
+}
+.student,.teacher{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.student-info,.teacher-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.readonly-input{
+    font-size: 14px;
+    background-color: transparent;
+    border: 0;
+    font-weight: 700;
+    color: #0A753E;
+}
+.inputo{
+    color: #0A753E;
+    margin-top:8px ;
+    margin-bottom:8px;
+    padding-left: 5px;
+    background-color: rgba(217, 217, 217, 1);
+    border:1px solid black;
+    height: 23px;
+}
+.inputo-area{
+    color: #0A753E;
+    margin-top:8px ;
+    margin-bottom:8px;
+    padding-left: 5px;
+    background-color: rgba(217, 217, 217, 1);
+    border:1px solid black;
+}
+h2{
+    color:#ffffff;
+}
+button{
+    margin-top: 18px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    width: fit-content;
+    align-self: center;
+    background-color: #ffffff;
+    color: #0A753E;
+    border: 1px solid #0A753E;
+    border-radius: 8px;
+    padding: 7px 20px ;
+    font-weight: 600;
+}
+button:hover{
+    transition: 300ms;
+    background-color: #d1cfcf;
+}
+
+.style-line{
+    width: 600px;
+}
+@media (max-width: 950px) {
+
+    nav{
+        justify-content:center;
+    }
+    h1{
+        margin: 10px 10px;
+        font-size: 15px;
+    }
+    .container {
+            margin: 10px;
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:start;
+            height: 90vh;
+    }
+    .persons{
+        flex-direction: column;
+    }
+    .line{
+        display: none;
+    }
+    
+}

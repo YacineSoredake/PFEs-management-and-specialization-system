@@ -1,0 +1,223 @@
+
+body {
+    margin: 0;
+    background: linear-gradient(to right, rgb(0, 30, 15),rgba(4, 182, 87, 0.888));
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    margin: 0;
+    background-image: url("/PFEs/figma/pexels-yungsaac-1557251.jpg");
+    background-size: cover;
+   
+}
+.chap{
+    margin-right: 5px; 
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+.profile{
+    color: rgba(10, 117, 62, 1);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border: 1px solid rgba(10, 117, 62, 1) ;
+    border-radius: 8px;
+}
+header{
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(4, 182, 87, 0.253);
+}
+
+.profil-right{
+    flex: 0.7;
+    padding:20px 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+    background-color: #e0e0e099;
+}
+.profil-left{
+    flex: 0.5;
+    padding:20px 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: #e0e0e099;
+}
+.state-green {
+    color: green;
+}
+.state-yellow {
+    color: yellow;
+}
+h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color:rgb(0, 0, 0)
+}
+label{
+    text-decoration: underline;
+    font-size: 14px;
+}
+.inputo{
+    margin-top: 5px;
+    padding: 5px 6px;
+    background-color: #fdfdfd;
+    border:1px solid transparent ;
+    width: min-content;
+    border-radius: 5px;
+}
+h1{
+    color: #fdfdfd;
+    margin: 0;
+}
+h1:hover{
+    font-size: 40px;
+    transition: 300ms;
+}
+footer {
+    bottom: 0px;
+    background-color:rgba(4, 182, 87, 0.253);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.afficher {
+    border-bottom: 1px solid black;
+    padding: 4px;
+    font-weight:500;
+    cursor: pointer;
+    display: none; 
+}
+.body-container{
+    display: flex;
+    height: 85vh;
+    gap: 40px;
+    padding-right: 40px;
+}
+.menubar {
+    color: rgba(10, 117, 62, 1) ;
+    background-color:rgba(4, 182, 87, 0.253);
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    flex-direction: column;
+    text-align: start;
+    display: flex;
+    padding: 10px;
+}
+a:hover{
+    color: #fdfdfd;
+    transition: 200ms;
+}
+a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fdfdfdb6;
+    padding: 10px 20px;
+    list-style: none; 
+    text-decoration: none;
+    font-size: 14px;
+}
+.edit-info,.edit-info-btn{
+    background-color: #ffffffdf;
+    font-size: 22px;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    color: rgba(2, 115, 55, 0.996);
+    align-items: center;
+    justify-content: space-around;
+
+}
+.edit-info-btn{
+    border: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+      font-size: 20px;
+      padding: 10px;
+      cursor: pointer;
+}
+.edit-info:hover{
+    color: rgba(2, 115, 55, 0.996);
+}
+
+.container{
+    color: #e0e0e0;
+    flex: 1;
+    align-items: center;
+    gap: 5px;
+    display: flex;
+    animation: fadeInUp 0.5s ease forwards;
+    filter: drop-shadow(0 0 0.7rem  rgb(52, 52, 52));
+}
+.dashboard{
+    filter: drop-shadow(0 0 0.5rem  rgb(63, 63, 63));
+    border-radius: 20px;
+    display: flex;
+    background-color:rgba(4, 201, 96, 0.285);
+    justify-content: space-around;
+    padding: 50px 10px;
+    flex: 1;
+}
+.greeting{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+    gap: 15px;
+}
+.aa {
+    filter: drop-shadow(0 0 0.3rem rgb(255, 255, 255));
+}
+hrey{
+    color: #fdfdfd94;
+}
+.uu{
+    align-items: center;
+    flex-direction: column;
+    align-self: start;
+    padding: 20px;
+    margin-top: 30px;
+    gap: 10px;
+}
