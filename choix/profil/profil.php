@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "C:\Users\USER\OneDrive\Bureau\PFEs\connectdb.php";
+include "../connectdb.php";
 
 // Assuming the student's ID is stored in $_SESSION['user_id']
 $id_user = $_SESSION['iduser_of_etudient'];

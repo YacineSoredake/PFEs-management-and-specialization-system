@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include "C:\Users\USER\OneDrive\Bureau\PFEs\connectdb.php";
+include "../connectdb.php";
 $user_id = $_SESSION['user_id'];
 
 // Check if the user_id exists in demandesupervision table

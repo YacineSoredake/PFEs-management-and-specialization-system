@@ -1,6 +1,6 @@
 <?php
 // Include the database connection file
-include "C:\Users\USER\OneDrive\Bureau\PFEs\connectdb.php";
+include "../connectdb.php";
 
 // Check if the level parameter is set
 if(isset($_GET['level'])) {

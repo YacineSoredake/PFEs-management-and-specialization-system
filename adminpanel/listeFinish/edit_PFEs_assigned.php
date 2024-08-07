@@ -8,7 +8,7 @@ if (!isset($_SESSION['usid'])) {
 }
 
 // Include database connection
-include "C:/Users/USER/OneDrive/Bureau/PFEs/connectdb.php";
+include "../connectdb.php";
 
 // Retrieve the IDs from the URL
 if (isset($_GET['id_student']) && isset($_GET['id_theme'])) {

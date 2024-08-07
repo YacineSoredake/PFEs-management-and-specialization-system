@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "C:/Users/USER/OneDrive/Bureau/PFEs/connectdb.php";
+include "../connectdb.php";
 
 $message=null;
 $code = $_SESSION['codeConfrim'];

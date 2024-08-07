@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include "C:/Users/USER/OneDrive/Bureau/PFEs/connectdb.php";
+include "../connectdb.php";
 
 // Check if the connection is established
 if ($db->connect_error) {
@@ -38,7 +38,8 @@ if (mysqli_num_rows($result) > 0) {
     $error = 'No assignment yet';
 }
 
-// Load dompdf
+// put the right path to your vendor/autoload.php file in my case i have it in <bureau>
+
 require_once('C:/Users/USER/OneDrive/Bureau/vendor/autoload.php');
 
 if (isset($_POST['generate_pdf'])) {

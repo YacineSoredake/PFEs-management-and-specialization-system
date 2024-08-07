@@ -1,8 +1,8 @@
 <?php
-include "C:\Users\USER\OneDrive\Bureau\PFEs\connectdb.php";
-require 'C:\Users\USER\OneDrive\Bureau\PFEs\PHPMailer\src\PHPMailer.php';
-require 'C:\Users\USER\OneDrive\Bureau\PFEs\PHPMailer\src\SMTP.php';
-require 'C:\Users\USER\OneDrive\Bureau\PFEs\PHPMailer\src\Exception.php';
+include "../connectdb.php";
+require '../PHPMailer\src\PHPMailer.php';
+require '../PHPMailer\src\SMTP.php';
+require '../PHPMailer\src\Exception.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;

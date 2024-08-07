@@ -2,7 +2,7 @@
 session_start();
 
 // Check if the user has admin privileges
-include "C:\Users\USER\OneDrive\Bureau\PFEs\connectdb.php";
+include "../connectdb.php";
 
 $id = $_GET['id'];
 
