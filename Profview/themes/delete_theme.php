@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "C:\Users\USER\OneDrive\Bureau\PFEs\connectdb.php";
+include "../connectdb.php";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $themeId = $_POST['theme_id'];

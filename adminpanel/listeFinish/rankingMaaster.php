@@ -9,8 +9,9 @@ if (!isset($_SESSION['usid'])) {
 }
 
 // Include database connection and PhpSpreadsheet autoload
-include "C:\Users\USER\OneDrive\Bureau\PFEs\connectdb.php";
-require 'C:/Users/USER/OneDrive/Bureau/vendor/autoload.php';
+include "../connectdb.php";
+//path to your autoload.php file 
+require '/Bureau/vendor/autoload.php';
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
 

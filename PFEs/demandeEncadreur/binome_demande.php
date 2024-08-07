@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include "C:\Users\USER\OneDrive\Bureau\PFEs\connectdb.php";
+include "../connectdb.php";
 
 if (isset($_POST['rechercher'])) {
     $matricule = $_POST['matricule']; 

@@ -7,8 +7,7 @@ if (!isset($_SESSION['usid'])) {
     exit();
 }
 
-// Include database connection
-include "C:/Users/USER/OneDrive/Bureau/PFEs/connectdb.php";
+include "../connectdb.php";
 
 // Check if the request method is POST
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

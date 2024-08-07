@@ -8,8 +8,7 @@ if (!isset($_SESSION['usid'])) {
     exit();
 }
 
-// Check if the user has admin privileges
-include "C:\Users\USER\OneDrive\Bureau\PFEs\connectdb.php";
+include "../connectdb.php";
 
 $user_id = $_SESSION['usid'];
 

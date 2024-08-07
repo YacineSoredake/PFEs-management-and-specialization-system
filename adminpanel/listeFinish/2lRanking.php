@@ -9,8 +9,9 @@ if (!isset($_SESSION['usid'])) {
 }
 
 // Include database connection and PhpSpreadsheet autoload
-include "C:\Users\USER\OneDrive\Bureau\PFEs\connectdb.php";
-require 'C:/Users/USER/OneDrive/Bureau/vendor/autoload.php';
+include "../connectdb.php";
+//path to your autoload.php file 
+require '/Bureau/vendor/autoload.php';
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
@@ -34,7 +35,8 @@ function updateOrInsertRanking($db, $student_id, $ranking) {
 // Check if the refresh button is clicked
 // Check if the refresh button is clicked
 if (isset($_POST['refresh'])) {
-    $excelFilePath = 'C:\Users\USER\OneDrive\Bureau\PFEs - Copie\excel\second_student_ranking.xlsx'; // Adjust this path
+    // put the right path to your excel file
+    $excelFilePath = '../excel/second_student_ranking.xlsx'; // Adjust this path
 
     // Load Excel file
     $spreadsheet = IOFactory::load($excelFilePath);

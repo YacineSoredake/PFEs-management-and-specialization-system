@@ -1,6 +1,6 @@
 <?php 
 
-include "C:\Users\USER\OneDrive\Bureau\PFEs\connectdb.php";
+include "../connectdb.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
